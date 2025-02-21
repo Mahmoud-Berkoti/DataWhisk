@@ -29,3 +29,9 @@ git clone https://github.com/Mahmoud-Berkoti/datawhisk.git
 
 cd datawhisk
 
+# Installing Dependencies
+
+## For Node.js (Playwright)
+To install the necessary Node.js dependencies for web scraping with Playwright, run the following command:
+```bash
+npm install playwright

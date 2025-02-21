@@ -14,7 +14,17 @@ DataWhisk is an innovative platform designed to automate the extraction and anal
 
 - **Playwright (Node.js):** For automated web scraping tasks.
 - **Python Libraries:**
+  
   - **Transformers:** For BERT-based sentiment analysis.
   - **Scikit-Learn:** For efficient keyword extraction.
   - **Pandas:** For advanced data manipulation.
   - **Matplotlib & WordCloud:** For creating impactful data visualizations.
+
+ # Installation Instructions
+
+## Cloning the Repository
+To get started, clone the repository to your local system with the commands:
+```bash
+git clone https://github.com/Mahmoud-Berkoti/datawhisk.git
+cd datawhisk
+

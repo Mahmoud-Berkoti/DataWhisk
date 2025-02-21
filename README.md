@@ -1,58 +1,60 @@
 ## Overview
-DataWhisk is a powerful tool designed to scrape Google Reviews using Playwright, perform sentiment analysis using a transformer-based model, and extract insights from customer feedback. 
-The project leverages **Playwright (Node.js)** for web scraping and **Python (Scikit-Learn, Transformers, Matplotlib, WordCloud)** for data processing and visualization.
+**DataWhisk** is a sophisticated toolkit crafted to harness the power of web scraping and sentiment analysis to distill actionable insights from Google Reviews. This project integrates ![Playwright](https://cdn-icons-png.flaticon.com/512/5968/5968350.png "Playwright") for scraping and ![Python](https://cdn-icons-png.flaticon.com/512/1822/1822899.png "Python") for data analytics and visualization, employing libraries like Scikit-Learn, Transformers, Matplotlib, and WordCloud.
 
-## Features
-- **Automated Web Scraping**: Uses Playwright to extract reviews from Google.
-- **Sentiment Analysis**: Applies a transformer-based model to evaluate review sentiment.
-- **Aspect-Based Insights**: Categorizes reviews into aspects such as food, service, atmosphere, and pricing.
-- **Keyword Extraction**: Identifies common terms in negative reviews for actionable improvements.
-- **Data Visualization**: Generates word clouds and aggregates aspect ratings.
+## Key Features
+- **Automated Web Scraping**: Harnesses ![Playwright](https://cdn-icons-png.flaticon.com/512/5968/5968350.png "Playwright") to methodically gather reviews from Google.
+- **Advanced Sentiment Analysis**: Utilizes transformer-based models to assess the emotional tone of reviews.
+- **Aspect-Based Evaluation**: Organizes reviews into relevant categories such as food quality, service efficiency, ambiance, and price fairness.
+- **Insightful Keyword Extraction**: Pinpoints prevalent terms in negative feedback to guide improvements.
+- **Rich Data Visualization**: Creates engaging word clouds and summarizes aspect-based evaluations visually.
 
-## Technologies Used
-- **Playwright (Node.js)**: Web scraping automation
+## Technology Stack
+- **![Playwright](https://cdn-icons-png.flaticon.com/512/5968/5968350.png "Playwright") (Node.js)**: Automates web scraping tasks.
 - **Python Libraries**:
-  - `transformers`: BERT-based sentiment analysis
-  - `scikit-learn`: Keyword extraction
-  - `pandas`: Data manipulation
-  - `matplotlib` & `wordcloud`: Data visualization
+  - ![Transformers](https://cdn-icons-png.flaticon.com/512/919/919853.png "Python") `transformers`: Employs BERT for nuanced sentiment analysis.
+  - ![Scikit-Learn](https://cdn-icons-png.flaticon.com/512/337/337953.png "Python") `scikit-learn`: Facilitates keyword extraction and data processing.
+  - ![Pandas](https://cdn-icons-png.flaticon.com/512/5968/5968322.png "Python") `pandas`: Manages and manipulates dataset.
+  - ![Matplotlib](https://cdn-icons-png.flaticon.com/512/888/888954.png "Python") `matplotlib` & ![WordCloud](https://cdn-icons-png.flaticon.com/512/888/888955.png "Python") `wordcloud`: Enhances data presentation through visualizations.
 
-## Installation
-1. **Clone the repository**
-   ```
+## Installation Instructions
+1. **Repository Cloning**
+   ```bash
    git clone https://github.com/abaan-noman/datawhisk.git
    cd datawhisk
-   ```
+Dependencies Installation
+Node.js (Playwright):
+bash
+Copy
+npm install playwright
+Python (Analysis & Visualization):
+bash
+Copy
+pip install transformers torch pandas scikit-learn matplotlib wordcloud
+Usage Guidelines
+Step 1: Extract Reviews
+Execute the Playwright script to collect reviews from Google:
 
-2. **Install dependencies**
-   - **For Node.js (Playwright)**:
-     ```
-     npm install playwright
-     ```
-   - **For Python (Data Analysis & Sentiment)**:
-     ```
-     pip install transformers torch pandas scikit-learn matplotlib wordcloud
-     ```
-
-## Usage
-### 1. Scrape Reviews
-Run the Playwright script to extract Google Reviews:
-```
+bash
+Copy
 node scrape.js
-```
-This will save reviews in the `googreviews` folder as JSON files.
+This script populates the googreviews directory with JSON files containing the reviews.
 
-### 2. Analyze Reviews
-Run the Python script to process and analyze the reviews:
-```
+Step 2: Process and Analyze Reviews
+Execute the Python script to analyze the collected reviews:
+
+bash
+Copy
 python bert.py
-```
-This will generate:
-- **Sentiment-based aspect ratings**
-- **Word cloud visualization**
-- **Improvement suggestions based on negative reviews**
+Outputs include:
 
-## Output Files
-- `reviews_with_aspects.json`: Reviews with sentiment-based aspect ratings.
-- `aspect_rating_summary.json`: Average ratings for each aspect.
-- `improvement_suggestions.json`: Keywords and improvement insights.
+Aspect-based sentiment evaluations
+Visual word clouds
+Constructive suggestions derived from critical reviews
+Output Files
+reviews_with_aspects.json: Contains reviews categorized with sentiment-based aspect evaluations.
+aspect_rating_summary.json: Summarizes average aspect ratings.
+improvement_suggestions.json: Offers keywords and suggestions for service enhancement.
+pgsql
+Copy
+
+This markdown setup includes all necessary information, structured with appropriate visual cues to ensure both

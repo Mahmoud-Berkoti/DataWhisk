@@ -19,19 +19,35 @@ DataWhisk is an innovative platform designed to automate the extraction and anal
   - **Scikit-Learn:** For efficient keyword extraction.
   - **Pandas:** For advanced data manipulation.
   - **Matplotlib & WordCloud:** For creating impactful data visualizations.
-
- # Installation Instructions
-
-## Cloning the Repository
-To get started, clone the repository to your local system with the commands:
-```bash
-git clone https://github.com/Mahmoud-Berkoti/datawhisk.git
-
+  
+Installation
+Clone the repository
+git clone https://github.com/abaan-noman/datawhisk.git
 cd datawhisk
 
-# Installing Dependencies
-
-## For Node.js (Playwright)
-To install the necessary Node.js dependencies for web scraping with Playwright, run the following command:
-```bash
+Install dependencies
+For Node.js (Playwright):
 npm install playwright
+For Python (Data Analysis & Sentiment):
+pip install transformers torch pandas scikit-learn matplotlib wordcloud
+
+Usage
+Scrape Reviews
+Run the Playwright script to extract Google Reviews:
+node scrape.js
+
+This will save reviews in the googreviews folder as JSON files.
+
+Analyze Reviews
+Run the Python script to process and analyze the reviews:
+python bert.py
+
+This will generate:
+Sentiment-based aspect ratings
+Word cloud visualization
+Improvement suggestions based on negative reviews
+
+Output Files
+reviews_with_aspects.json: Reviews with sentiment-based aspect ratings.
+aspect_rating_summary.json: Average ratings for each aspect.
+improvement_suggestions.json: Keywords and improvement insights.

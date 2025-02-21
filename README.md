@@ -23,7 +23,7 @@ DataWhisk is an innovative platform designed to automate the extraction and anal
 ## Installation
 1. **Clone the repository**
    ```
-   git clone https://github.com/abdullah-shibib/datawhisk.git
+   git clone https://github.com/Mahmoud-Berkoti/datawhisk.git
    
    cd datawhisk
    ```

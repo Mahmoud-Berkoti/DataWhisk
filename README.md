@@ -1,4 +1,4 @@
-# DataWhisk
+# Datawhisk
 
 DataWhisk is an innovative platform designed to automate the extraction and analysis of Google reviews. Utilizing Playwright for web scraping and Python for data analysis and visualization, it harnesses transformer models for sentiment analysis to derive valuable insights from customer feedback.
 
